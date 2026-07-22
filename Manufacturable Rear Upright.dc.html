@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>BAJA SAE Rear Upright DFM Redesign · Preston Yang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@600;700;800&family=Chakra+Petch:wght@600;700&family=Barlow+Condensed:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:#fff;}
+  ::selection{background:oklch(0.2 0.005 90);color:#fff;}
+  a{color:inherit;text-decoration:none;}
+  a:hover{color:oklch(0.16 0.005 90);}
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+
+  @media (max-width: 700px) {
+    div[style*="width:65%"] { width: 90% !important; }
+    div[style*="width: 65%"] { width: 90% !important; }
+    a[title="Previous project"], a[title="Next project"] { width: 34px !important; }
+    div[style*="grid-template-columns:minmax(280px,1fr) minmax(280px,380px)"] { grid-template-columns: 1fr !important; }
+  }
+</style>
+</helmet>
+<dc-import name="RocketGuide" hint-size="1,1"></dc-import>
+<div style="font-family:'Inter',system-ui,sans-serif;color:oklch(0.16 0.005 90);background:#fff;min-height:100vh;">
+
+  <nav aria-label="Primary" style="position:sticky;top:16px;z-index:30;display:flex;justify-content:center;pointer-events:none;">
+    <div style="pointer-events:auto;display:flex;flex-wrap:wrap;align-items:center;gap:3.52px;background:oklch(0.8 0.004 90 / 0.55);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border-radius:14.08px;padding:8.8px 24.2px 11px 13.2px;box-shadow:0 4px 20px oklch(0.16 0.005 90 / 0.1);max-width:calc(100vw - 40px);font-size:110%;">
+      <a href="index.html" style="width:22.88px;height:22.88px;background:oklch(0.12 0.005 90);border-radius:7.04px;display:flex;align-items:center;justify-content:center;flex:none;margin-right:14.08px;transition:transform .2s;" style-hover="transform:scale(1.1);">
+        <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:9.68px;color:#fff;letter-spacing:-0.02em;">PY</span>
+      </a>
+      <a href="index.html" style="color:oklch(0.16 0.005 90);font-size:14.52px;padding:6.16px 12.1px 9.9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">About</a>
+      <a href="Portfolio Projects.dc.html" style="color:oklch(0.16 0.005 90);font-size:14.52px;padding:6.16px 12.1px 9.9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">Projects</a>
+      <a href="Contact.dc.html" style="color:oklch(0.16 0.005 90);font-size:14.52px;padding:6.16px 12.1px 9.9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">Contact</a>
+    </div>
+  </nav>
+
+  <div style="max-width:1600px;width:65%;margin:0 auto;padding:68px max(0px,calc(clamp(20px,5vw,88px) - 75px)) 0;display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;">
+    <div style="">
+      <h1 style="font-family:'Open Sans',sans-serif;font-weight:600;font-size:clamp(2.1rem,4.4vw,3.1rem);letter-spacing:-0.02em;margin:0 0 14px;">BAJA SAE Rear Upright DFM Redesign</h1>
+      <p style="font-size:17.5px;line-height:1.6;color:oklch(0.45 0.005 90);margin:0;">Redesigned the right rear upright to eliminate non-functional geometry, simplifying the bore contour and standardizing all fillets and chamfers, with the bearing bore and mounting positions held to print.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,auto);gap:20px 32px;font-size:13.5px;align-self:flex-start;">
+      <div><div style="color:oklch(0.5 0.005 90);margin-bottom:3px;">Role</div><div style="font-weight:600;">Design Engineer, CAD &amp; DFM</div></div>
+      <div><div style="color:oklch(0.5 0.005 90);margin-bottom:3px;">Timeline</div><div style="font-weight:600;">One build season, FSAE</div></div>
+      <div><div style="color:oklch(0.5 0.005 90);margin-bottom:3px;">Tools</div><div style="font-weight:600;">SolidWorks, CNC mill &amp; lathe</div></div>
+      <div><div style="color:oklch(0.5 0.005 90);margin-bottom:3px;">Status</div><div style="font-weight:600;">Machined and installed</div></div>
+    </div>
+  </div>
+
+  <div style="max-width:1600px;width:65%;margin:0 auto;padding:36px max(0px,calc(clamp(20px,5vw,88px) - 75px));">
+    <div style="aspect-ratio:21/9;max-height:437px;max-width:95%;border-radius:14px;overflow:hidden;background:#fff;margin:0 auto;">
+      <img src="assets/upright-drawing-sheet-v2.png" alt="Upright drawing sheet v2" style="width:100%;height:100%;object-fit:contain;">
+    </div>
+    <div style="font-size:13px;color:oklch(0.5 0.005 90);margin-top:10px;text-align:center;">Released drawing sheet, Rev 1, dimensioned and toleranced per ASME Y14.5</div>
+  </div>
+
+  <div style="max-width:1600px;width:65%;margin:0 auto;padding:0 max(0px,calc(clamp(20px,5vw,88px) - 75px)) 64px;">
+    <div>
+
+      <section style="margin-bottom:56px;">
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">Overview &amp; Ownership</div>
+        <p style="font-size:16.5px;line-height:1.7;color:oklch(0.35 0.005 90);margin:0;">The bearing bore and hole pattern were carried over as fixed requirements: the upright locates the wheel bearing and suspension pickups, so those features remained unchanged. The prior revision included a non-functional contour around the main bore and an unsymmetric fillet at the tie-rod mount, both of which added machining time without contributing to part stiffness. The redesign was a feature-by-feature review of the part, removing geometry that did not serve a structural or functional purpose.</p>
+        <p style="font-size:16.5px;line-height:1.7;color:oklch(0.35 0.005 90);margin:14px 0 0;"><strong>My role:</strong> owned the redesign end to end, from identifying non-functional geometry through the CAD revision to releasing the toleranced drawing for the machine shop.</p>
+      </section>
+
+      <section style="margin-bottom:56px;">
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">Requirements</div>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+          <div style="border-top:1px solid oklch(0.85 0.005 90);padding-top:10px;">
+            <div style="font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:oklch(0.5 0.005 90);margin-bottom:4px;">Bearing bore</div>
+            <div style="font-size:14.5px;color:oklch(0.3 0.005 90);">2.678 in bore held to +0.002 / -0.000 in for a press-fit wheel bearing, unchanged</div>
+          </div>
+          <div style="border-top:1px solid oklch(0.85 0.005 90);padding-top:10px;">
+            <div style="font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:oklch(0.5 0.005 90);margin-bottom:4px;">Manufacturability</div>
+            <div style="font-size:14.5px;color:oklch(0.3 0.005 90);">Remove non-functional geometry, contours, and one-off fillets that add machining time without adding stiffness</div>
+          </div>
+          <div style="border-top:1px solid oklch(0.85 0.005 90);padding-top:10px;">
+            <div style="font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:oklch(0.3 0.005 90);margin-bottom:4px;">Tolerancing</div>
+            <div style="font-size:14.5px;color:oklch(0.3 0.005 90);">±0.005 in two-place decimals, GD&amp;T per ASME Y14.5, dimensions in inches</div>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-bottom:56px;">
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">What Changed</div>
+        <p style="font-size:16.5px;line-height:1.7;color:oklch(0.35 0.005 90);margin:0 0 20px;">Bore diameter, tolerance, and hole locations are unchanged from the prior revision. The scope was limited to non-functional geometry: features simplified where possible, and fillets and chamfers standardized to reduce tooling changeovers.</p>
+        <div style="background:#fff;border:1px solid oklch(0.9 0.004 90);border-radius:10px;padding:20px 22px;">
+          <ul style="font-size:14.5px;line-height:1.75;color:oklch(0.32 0.005 90);margin:0;padding-left:20px;">
+            <li>Simplified the complex contour around the main bore down to what the bearing actually needs</li>
+            <li>Removed the unsymmetric fillet near the tie-rod mount and replaced it with a nominal, symmetric radius</li>
+            <li>Standardized every fillet on the part to nominal radii matched to the shop's available end-mill sizes, instead of one-off radii</li>
+            <li>Removed chamfers that weren't doing anything functionally</li>
+            <li>Turned the inner bore chamfer into a fillet for better tool accessibility during machining</li>
+          </ul>
+        </div>
+      </section>
+
+      <section style="margin-bottom:56px;">
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">Before &amp; After</div>
+        <p style="font-size:14.5px;line-height:1.6;color:oklch(0.4 0.005 90);margin:0 0 16px;">Bore and mounting locations are unchanged; the bore contour and fillet geometry were the only features revised.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:90%;">
+          <div>
+            <div style="aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#fff;border:1px solid oklch(0.9 0.004 90);"><img loading="lazy" src="assets/upright-compare-before.png" alt="Upright compare before" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-size:12.5px;color:oklch(0.5 0.005 90);margin-top:8px;text-align:center;">Before — unsymmetric fillet, non-functional bore contour</div>
+          </div>
+          <div>
+            <div style="aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#fff;border:1px solid oklch(0.9 0.004 90);"><img loading="lazy" src="assets/upright-compare-after.png" alt="Upright compare after" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-size:12.5px;color:oklch(0.5 0.005 90);margin-top:8px;text-align:center;">After — simplified contour, nominal symmetric fillets</div>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-bottom:56px;">
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">Finished Part</div>
+        <p style="font-size:14.5px;line-height:1.6;color:oklch(0.4 0.005 90);margin:0 0 14px;">Machined in 7075-T6 aluminum by our team's machinist and installed on the car.</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+          <div style="aspect-ratio:4/3.4;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/upright-machined-1.png" alt="Upright machined 1" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div style="aspect-ratio:4/3.4;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/upright-machined-2.png" alt="Upright machined 2" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div style="aspect-ratio:4/3.4;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/upright-machined-3.png" alt="Upright machined 3" style="width:100%;height:100%;object-fit:cover;"></div>
+        </div>
+      </section>
+
+      <section>
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">CAD Reference</div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+          <span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:#fff;background:oklch(0.55 0.13 155);border-radius:5px;padding:3px 9px;">Released</span>
+          <span style="font-size:12.5px;color:oklch(0.5 0.005 90);">Current revision, as machined</span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:28px;">
+          <div>
+            <div style="aspect-ratio:4/3.4;border-radius:8px;overflow:hidden;background:#fff;border-top:3px solid oklch(0.55 0.13 155);"><img loading="lazy" src="assets/upright-new-iso.png" alt="Upright new iso" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-size:12px;color:oklch(0.5 0.005 90);margin-top:6px;">Released design, isometric</div>
+          </div>
+          <div>
+            <div style="aspect-ratio:4/3.4;border-radius:8px;overflow:hidden;background:#fff;border-top:3px solid oklch(0.55 0.13 155);"><img loading="lazy" src="assets/upright-new-front.png" alt="Upright new front" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-size:12px;color:oklch(0.5 0.005 90);margin-top:6px;">Released design, front cross-section</div>
+          </div>
+          <div>
+            <div style="aspect-ratio:4/3.4;border-radius:8px;overflow:hidden;background:#fff;border-top:3px solid oklch(0.55 0.13 155);"><img loading="lazy" src="assets/upright-new-side.png" alt="Upright new side" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-size:12px;color:oklch(0.5 0.005 90);margin-top:6px;">Released design, side profile</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+          <span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:oklch(0.4 0.005 90);background:oklch(0.88 0.005 90);border-radius:5px;padding:3px 9px;">Before</span>
+          <span style="font-size:12.5px;color:oklch(0.5 0.005 90);">Prior revision, for reference</span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+          <div>
+            <div style="aspect-ratio:4/3.4;border-radius:8px;overflow:hidden;background:#fff;border-top:3px solid oklch(0.75 0.005 90);"><img loading="lazy" src="assets/upright-old-iso.png" alt="Upright old iso" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-size:12px;color:oklch(0.5 0.005 90);margin-top:6px;">Prior design, isometric</div>
+          </div>
+          <div>
+            <div style="aspect-ratio:4/3.4;border-radius:8px;overflow:hidden;background:#fff;border-top:3px solid oklch(0.75 0.005 90);"><img loading="lazy" src="assets/upright-old-front.png" alt="Upright old front" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-size:12px;color:oklch(0.5 0.005 90);margin-top:6px;">Prior design, front view</div>
+          </div>
+          <div>
+            <div style="aspect-ratio:4/3.4;border-radius:8px;overflow:hidden;background:#fff;border-top:3px solid oklch(0.75 0.005 90);"><img loading="lazy" src="assets/upright-old-side.png" alt="Upright old side" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-size:12px;color:oklch(0.5 0.005 90);margin-top:6px;">Prior design, side profile</div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    
+  </div>
+
+  <div style="background:oklch(0.98 0.003 90);">
+    <div style="max-width:1600px;width:65%;margin:0 auto;padding:64px max(0px,calc(clamp(20px,5vw,88px) - 75px)) 100px;">
+      <div style="font-weight:700;font-size:24px;margin-bottom:24px;">Results</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;border-top:1px solid oklch(0.85 0.005 90);padding-top:24px;">
+        <div>
+          <div style="font-family:'Open Sans',sans-serif;font-weight:600;font-size:19px;letter-spacing:-0.01em;margin-bottom:6px;">Standardized fillets</div>
+          <div style="font-size:13px;color:oklch(0.4 0.005 90);">Every radius matched to an available end-mill size, no one-off or unsymmetric fillets left</div>
+        </div>
+        <div>
+          <div style="font-family:'Open Sans',sans-serif;font-weight:600;font-size:19px;letter-spacing:-0.01em;margin-bottom:6px;">2.678 in bore</div>
+          <div style="font-size:13px;color:oklch(0.4 0.005 90);">Held to +0.002 / -0.000 in for the press-fit wheel bearing, unchanged</div>
+        </div>
+        <div>
+          <div style="font-family:'Open Sans',sans-serif;font-weight:600;font-size:19px;letter-spacing:-0.01em;margin-bottom:6px;">Machined &amp; installed</div>
+          <div style="font-size:13px;color:oklch(0.4 0.005 90);">Drawing released, part cut, and running on the car</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:1600px;width:65%;margin:0 auto;padding:100px max(0px,calc(clamp(20px,5vw,88px) - 75px)) 50px;display:flex;justify-content:space-between;">
+    <a href="Baja Wheel Weight Reduction.dc.html" style="font-size:14.5px;font-weight:600;color:oklch(0.2 0.005 90);background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:0 100%;background-size:0% 2px;transition:background-size .25s ease,color .2s ease;" style-hover="background-size:100% 2px;color:oklch(0.4 0.005 90);">← Previous: BAJA SAE Rim Optimization</a>
+    <a href="Baja SAE Suspension Design.dc.html" style="font-size:14.5px;font-weight:600;color:oklch(0.2 0.005 90);background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:0 100%;background-size:0% 2px;transition:background-size .25s ease,color .2s ease;" style-hover="background-size:100% 2px;color:oklch(0.4 0.005 90);">Next: Baja SAE Suspension Design →</a>
+  </div>
+</div>
+
+  <a href="Baja Wheel Weight Reduction.dc.html" title="Previous project" aria-label="Previous project" style="position:fixed;left:48px;top:0;bottom:0;width:52px;z-index:20;display:flex;align-items:center;justify-content:flex-start;padding-left:12px;background:transparent;">
+    <svg width="17" height="27" viewBox="0 0 14 22" style="transform:rotate(180deg);opacity:0.32;transition:opacity .3s ease,transform .3s ease;" style-hover="opacity:1;transform:rotate(180deg) scale(1.25);"><path d="M1 1 L13 11 L1 21" fill="none" stroke="oklch(0.16 0.005 90)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  </a>
+  <a href="Baja SAE Suspension Design.dc.html" title="Next project" aria-label="Next project" style="position:fixed;right:48px;top:0;bottom:0;width:52px;z-index:20;display:flex;align-items:center;justify-content:flex-end;padding-right:12px;background:transparent;">
+    <svg width="17" height="27" viewBox="0 0 14 22" style="opacity:0.32;transition:opacity .3s ease,transform .3s ease;" style-hover="opacity:1;transform:scale(1.25);"><path d="M1 1 L13 11 L1 21" fill="none" stroke="oklch(0.16 0.005 90)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  </a>
+</x-dc>
+</body>
+</html>

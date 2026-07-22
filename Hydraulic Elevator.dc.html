@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Hydraulic Elevator (Academic Concept) · Preston Yang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Open+Sans:wght@600;700;800&amp;family=Chakra+Petch:wght@600;700&amp;family=Barlow+Condensed:wght@500;600&amp;display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:#fff;}
+  ::selection{background:oklch(0.2 0.005 90);color:#fff;}
+  a{color:inherit;text-decoration:none;}
+  a:hover{color:oklch(0.16 0.005 90);}
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+
+  @media (max-width: 700px) {
+    div[style*="width:65%"] { width: 90% !important; }
+    div[style*="width: 65%"] { width: 90% !important; }
+    a[title="Previous project"], a[title="Next project"] { width: 34px !important; }
+    div[style*="grid-template-columns:minmax(280px,1fr) minmax(280px,380px)"] { grid-template-columns: 1fr !important; }
+  }
+</style>
+</helmet>
+<dc-import name="RocketGuide" hint-size="1,1"></dc-import>
+<div style="font-family:'Inter',system-ui,sans-serif;color:oklch(0.16 0.005 90);background:#fff;min-height:100vh;">
+
+  <nav aria-label="Primary" style="position:sticky;top:16px;z-index:30;display:flex;justify-content:center;pointer-events:none;">
+    <div style="pointer-events:auto;display:flex;flex-wrap:wrap;align-items:center;gap:3.52px;background:oklch(0.8 0.004 90 / 0.55);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border-radius:14.08px;padding:8.8px 24.2px 11px 13.2px;box-shadow:0 4px 20px oklch(0.16 0.005 90 / 0.1);max-width:calc(100vw - 40px);font-size:110%;">
+      <a href="index.html" style="width:22.88px;height:22.88px;background:oklch(0.12 0.005 90);border-radius:7.04px;display:flex;align-items:center;justify-content:center;flex:none;margin-right:14.08px;transition:transform .2s;" style-hover="transform:scale(1.1);">
+        <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:9.68px;color:#fff;letter-spacing:-0.02em;">PY</span>
+      </a>
+      <a href="index.html" style="color:oklch(0.16 0.005 90);font-size:14.52px;padding:6.16px 12.1px 9.9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">About</a>
+      <a href="Portfolio Projects.dc.html" style="color:oklch(0.16 0.005 90);font-size:14.52px;padding:6.16px 12.1px 9.9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">Projects</a>
+      <a href="Contact.dc.html" style="color:oklch(0.16 0.005 90);font-size:14.52px;padding:6.16px 12.1px 9.9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">Contact</a>
+    </div>
+  </nav>
+
+  <div style="max-width:1600px;width:65%;margin:0 auto;padding:68px max(0px,calc(clamp(20px,5vw,88px) - 75px)) 0;display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;">
+    <div style="">
+      <h1 style="font-family:'Open Sans',sans-serif;font-weight:600;font-size:clamp(2.1rem,4.4vw,3.1rem);letter-spacing:-0.02em;margin:0 0 14px;">Hydraulic Elevator</h1>
+      <p style="font-size:17.5px;line-height:1.6;color:oklch(0.45 0.005 90);margin:0;">An academic concept for a single-piston hydraulic lift, sized against seven governing-equation plots. A course proposal only, never built or approved for use.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,auto);gap:20px 32px;font-size:13.5px;align-self:flex-start;">
+      <div><div style="color:oklch(0.5 0.005 90);margin-bottom:3px;">Role</div><div style="font-weight:600;">Design Engineer, Team of 4</div></div>
+      <div><div style="color:oklch(0.5 0.005 90);margin-bottom:3px;">Timeline</div><div style="font-weight:600;">One semester, Fluid Mechanics</div></div>
+      <div><div style="color:oklch(0.5 0.005 90);margin-bottom:3px;">Tools</div><div style="font-weight:600;">Hand Calcs, MATLAB, SolidWorks</div></div>
+      <div><div style="color:oklch(0.5 0.005 90);margin-bottom:3px;">Status</div><div style="font-weight:600;">Academic proposal, not fabricated</div></div>
+    </div>
+  </div>
+
+  <div style="max-width:1600px;width:65%;margin:0 auto;padding:36px max(0px,calc(clamp(20px,5vw,88px) - 75px));">
+    <div style="aspect-ratio:21/9;max-height:437px;max-width:95%;border-radius:14px;overflow:hidden;background:#fff;margin:0 auto;">
+      <img src="assets/hyd-fig12-isometric.png" alt="Hyd fig12 isometric" style="width:100%;height:100%;object-fit:contain;">
+    </div>
+    <div style="font-size:13px;color:oklch(0.5 0.005 90);margin-top:10px;text-align:center;">Isometric view of the finalized single-piston elevator assembly</div>
+  </div>
+
+  <div style="max-width:1600px;width:65%;margin:0 auto;padding:0 max(0px,calc(clamp(20px,5vw,88px) - 75px)) 64px;">
+    <div>
+
+      <section style="margin-bottom:56px;">
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">Overview &amp; Ownership</div>
+        <p style="font-size:16.5px;line-height:1.7;color:oklch(0.35 0.005 90);margin:0;">For a Fluid Mechanics course project, our team of four designed a hydraulic elevator concept lifting a 200 to 300 lb load 6 to 12 inches, holding any height for 5 minutes, on water, air, or a mix, against a $20 budget target. We compared three lift architectures, selected a single-piston cylinder by weighted decision matrix, and carried it through sizing, hand calculations, and a design package of drawings and a bill of materials. <strong>This design was never fabricated, tested, or approved for use, it exists only as a course deliverable.</strong> Lifting a person on compressed gas in Schedule 40 PVC carries real rupture risk that a course-level safety factor doesn't retire; a build would need a properly rated pressure vessel.</p>
+        <p style="font-size:16.5px;line-height:1.7;color:oklch(0.35 0.005 90);margin:14px 0 0;"><strong>My role:</strong>&nbsp;contributed to concept evaluation, governing-equation derivation for the selected mechanism, and the piston, rod, platform sizing analysis, modeled the complete assembly in CAD and, produced all engineering drawings.</p>
+      </section>
+
+      <section style="margin-bottom:56px;">
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">Requirements</div>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+          <div style="border-top:1px solid oklch(0.85 0.005 90);padding-top:10px;">
+            <div style="font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:oklch(0.5 0.005 90);margin-bottom:4px;">Motion</div>
+            <div style="font-size:14.5px;color:oklch(0.3 0.005 90);">6 to 12 in of travel, stoppable and holdable at any intermediate height for 5 minutes</div>
+          </div>
+          <div style="border-top:1px solid oklch(0.85 0.005 90);padding-top:10px;">
+            <div style="font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:oklch(0.5 0.005 90);margin-bottom:4px;">Load</div>
+            <div style="font-size:14.5px;color:oklch(0.3 0.005 90);">200 to 300 lb human load target, designed to a 379.5 lb force with a 1.15 safety factor — a course-level margin only, not sufficient for an actual human-rated lift</div>
+          </div>
+          <div style="border-top:1px solid oklch(0.85 0.005 90);padding-top:10px;">
+            <div style="font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:oklch(0.5 0.005 90);margin-bottom:4px;">Working fluid</div>
+            <div style="font-size:14.5px;color:oklch(0.3 0.005 90);">Water, air, or a combination only, actuated by a standard bicycle pump</div>
+          </div>
+          <div style="border-top:1px solid oklch(0.85 0.005 90);padding-top:10px;">
+            <div style="font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:oklch(0.5 0.005 90);margin-bottom:4px;">Cost &amp; build time</div>
+            <div style="font-size:14.5px;color:oklch(0.3 0.005 90);">$20 suggested budget (exceeded, see Results), off-the-shelf stock, one week to build if ever approved</div>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-bottom:56px;">
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">Development</div>
+        <p style="font-size:16.5px;line-height:1.7;color:oklch(0.35 0.005 90);margin:0 0 28px;">We evaluated three hydraulic lift architectures against safety, feasibility, stability, leakage risk, efficiency, and cost.</p>
+
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:12px;">
+          <div>
+            <div style="aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#fff;margin-bottom:10px;"><img loading="lazy" src="assets/hyd-fig1-scissor-sketch.png" alt="Hyd fig1 scissor sketch" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-weight:600;font-size:14.5px;margin-bottom:4px;">Scissor lift</div>
+            <div style="font-size:13px;line-height:1.55;color:oklch(0.45 0.005 90);">Rejected: actuator force exceeds twice the design load at low angles, and multiple pin joints raise shear-failure risk.</div>
+          </div>
+          <div>
+            <div style="aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#fff;margin-bottom:10px;"><img loading="lazy" src="assets/hyd-fig2-telescopic-sketch.png" alt="Hyd fig2 telescopic sketch" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-weight:600;font-size:14.5px;margin-bottom:4px;">Telescopic lift</div>
+            <div style="font-size:13px;line-height:1.55;color:oklch(0.45 0.005 90);">Rejected: decreasing stage areas demand rising pressure across stages, multiplying sealing interfaces and leak risk.</div>
+          </div>
+          <div>
+            <div style="aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#fff;margin-bottom:10px;"><img loading="lazy" src="assets/hyd-fig3-piston-sketch.jpg" alt="Hyd fig3 piston sketch" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-weight:600;font-size:14.5px;margin-bottom:4px;">Single piston cylinder — selected</div>
+            <div style="font-size:13px;line-height:1.55;color:oklch(0.45 0.005 90);">Chosen: direct F = PA relationship, one stage, fewest seals, and the highest score on the weighted decision matrix.</div>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-bottom:56px;">
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">Engineering Decision</div>
+        <p style="font-size:16.5px;line-height:1.7;color:oklch(0.35 0.005 90);margin:0 0 24px;">Because the ideal piston-diameter band and the actuation-effort curve both flattened out near 3 inches, we sized the bore to a 3 in nominal diameter to match off-the-shelf Schedule 40 PVC rather than the theoretical 2.8 in minimum. That drops the working pressure to about 53.7 psi and keeps the lift within roughly 20 bicycle-pump strokes. The hoop-stress check alone showed comfortable margin at that pressure, but hoop stress isn't the whole safety picture: end caps, bonded joints, fittings, buckling, and dynamic loading all have their own failure modes that weren't checked here, and PVC is not rated for compressed-gas service regardless of wall margin.</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:8px;">
+          <div style="aspect-ratio:4/3;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/hyd-fig4-diameter-vs-pressure.png" alt="Hyd fig4 diameter vs pressure" style="width:100%;height:100%;object-fit:contain;"></div>
+          <div style="aspect-ratio:4/3;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/hyd-fig5-force-vs-diameter.png" alt="Required diameter vs. pressure, output force vs. diameter, and pump strokes vs. working pressure" style="width:100%;height:100%;object-fit:contain;"></div>
+          <div style="aspect-ratio:4/3;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/hyd-fig6-actuation-effort.png" alt="Required diameter vs. pressure, output force vs. diameter, and pump strokes vs. working pressure" style="width:100%;height:100%;object-fit:contain;"></div>
+        </div>
+        <div style="font-size:12.5px;color:oklch(0.5 0.005 90);font-style:italic;">Required diameter vs. pressure, output force vs. diameter, and pump strokes vs. working pressure</div>
+      </section>
+
+      <section style="margin-bottom:56px;">
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">Calculations</div>
+        <p style="font-size:16.5px;line-height:1.7;color:oklch(0.35 0.005 90);margin:0 0 24px;">The design was checked through closed-form hand calculations and parametric plots only, never built or physically tested. Every structural check cleared its allowable with margin under the stated assumptions: the PVC cylinder wall (0.5 in actual vs. 0.01 in minimum) comfortably exceeds the hoop-stress requirement, a 1.5 in piston rod carries more than 4 times the minimum buckling-safe diameter, the 18 by 18 in, 0.75 in plywood platform stays under the 0.1 in deflection limit, and 0.25 in aluminum tie rods sit well below their allowable tensile stress. These checks do not cover seals, fittings, joints, or dynamic loading, and none of it substitutes for physical testing of a device meant to carry a person.</p>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:24px;">
+          <div style="border-top:1px solid oklch(0.85 0.005 90);padding-top:8px;"><div style="font-size:13px;font-weight:600;">Cylinder wall</div><div style="font-size:13px;color:oklch(0.4 0.005 90);">0.5 in actual vs. 0.01 in min</div></div>
+          <div style="border-top:1px solid oklch(0.85 0.005 90);padding-top:8px;"><div style="font-size:13px;font-weight:600;">Piston rod</div><div style="font-size:13px;color:oklch(0.4 0.005 90);">1.5 in, &gt;4x min buckling diameter</div></div>
+          <div style="border-top:1px solid oklch(0.85 0.005 90);padding-top:8px;"><div style="font-size:13px;font-weight:600;">Platform deflection</div><div style="font-size:13px;color:oklch(0.4 0.005 90);">Under 0.1 in limit</div></div>
+          <div style="border-top:1px solid oklch(0.85 0.005 90);padding-top:8px;"><div style="font-size:13px;font-weight:600;">Tie rods</div><div style="font-size:13px;color:oklch(0.4 0.005 90);">Well below allowable stress</div></div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:8px;">
+          <div style="aspect-ratio:4/3;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/hyd-fig7-buckling-load.png" alt="Hyd fig7 buckling load" style="width:100%;height:100%;object-fit:contain;"></div>
+          <div style="aspect-ratio:4/3;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/hyd-fig10-total-stress.png" alt="Buckling load vs. rod length, total rod stress vs. load eccentricity, and tensile stress vs. tie-rod diameter" style="width:100%;height:100%;object-fit:contain;"></div>
+          <div style="aspect-ratio:4/3;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/hyd-fig11-tie-rod-stress.png" alt="Buckling load vs. rod length, total rod stress vs. load eccentricity, and tensile stress vs. tie-rod diameter" style="width:100%;height:100%;object-fit:contain;"></div>
+        </div>
+        <div style="font-size:12.5px;color:oklch(0.5 0.005 90);font-style:italic;margin-bottom:24px;">Buckling load vs. rod length, total rod stress vs. load eccentricity, and tensile stress vs. tie-rod diameter</div>
+        <div style="font-weight:600;font-size:16px;margin-bottom:10px;">Planned validation criteria (not yet tested)</div>
+        <ul style="font-size:14.5px;line-height:1.7;color:oklch(0.35 0.005 90);margin:0;padding-left:20px;">
+          <li>Vertical displacement of 6 to 12 in under the full 379.5 lb design force</li>
+          <li>19 to 20 pump strokes (±2) to reach maximum height</li>
+          <li>Less than 0.5 in vertical drift holding maximum height for 5 minutes</li>
+          <li>No visible leakage at seals, fittings, or valves, and no permanent deformation after testing</li>
+        </ul>
+      </section>
+
+      <section>
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">Design Package</div>
+        <div style="aspect-ratio:1550/1190;max-width:90%;border-radius:8px;overflow:hidden;background:#fff;margin-bottom:8px;"><img loading="lazy" src="assets/hyd-fig18-exploded-bom.png" alt="Exploded assembly with numbered balloons and the itemized bill of materials" style="width:100%;height:100%;object-fit:contain;"></div>
+        <div style="font-size:12.5px;color:oklch(0.5 0.005 90);font-style:italic;margin-bottom:20px;">Exploded assembly with numbered balloons and the itemized bill of materials</div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
+          <div style="aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/hyd-fig19-piston.png" alt="Hyd fig19 piston" style="width:100%;height:100%;object-fit:contain;"></div>
+          <div style="aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/hyd-fig20-piston-rod.png" alt="Hyd fig20 piston rod" style="width:100%;height:100%;object-fit:contain;"></div>
+          <div style="aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/hyd-fig21-head.png" alt="Hyd fig21 head" style="width:100%;height:100%;object-fit:contain;"></div>
+          <div style="aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/hyd-fig22-cylinder-barrel.png" alt="Hyd fig22 cylinder barrel" style="width:100%;height:100%;object-fit:contain;"></div>
+          <div style="aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/hyd-fig23-tie-rod.png" alt="Hyd fig23 tie rod" style="width:100%;height:100%;object-fit:contain;"></div>
+          <div style="aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/hyd-fig24-adapter-plate.png" alt="Hyd fig24 adapter plate" style="width:100%;height:100%;object-fit:contain;"></div>
+          <div style="aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/hyd-fig25-platform.png" alt="Orthographic drawings for the piston, rod, head, barrel, tie rod, adapter plate, platform, and bottom plate" style="width:100%;height:100%;object-fit:contain;"></div>
+          <div style="aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/hyd-fig27-bottom.png" alt="Orthographic drawings for the piston, rod, head, barrel, tie rod, adapter plate, platform, and bottom plate" style="width:100%;height:100%;object-fit:contain;"></div>
+        </div>
+        <div style="font-size:12.5px;color:oklch(0.5 0.005 90);font-style:italic;margin-top:8px;">Orthographic drawings for the piston, rod, head, barrel, tie rod, adapter plate, platform, and bottom plate</div>
+      </section>
+
+    </div>
+
+    
+  </div>
+
+  <div style="background:oklch(0.98 0.003 90);">
+    <div style="max-width:1600px;width:65%;margin:0 auto;padding:64px max(0px,calc(clamp(20px,5vw,88px) - 75px)) 100px;">
+      <div style="font-weight:700;font-size:24px;margin-bottom:24px;">Results</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;border-top:1px solid oklch(0.85 0.005 90);padding-top:24px;">
+        <div>
+          <div style="font-family:'Open Sans',sans-serif;font-weight:600;font-size:19px;letter-spacing:-0.01em;margin-bottom:6px;">3 in bore, 53.7 psi</div>
+          <div style="font-size:13px;color:oklch(0.4 0.005 90);">Piston sized to standard PVC stock, well under burst pressure</div>
+        </div>
+        <div>
+          <div style="font-family:'Open Sans',sans-serif;font-weight:600;font-size:19px;letter-spacing:-0.01em;margin-bottom:6px;">~20 pump strokes</div>
+          <div style="font-size:13px;color:oklch(0.4 0.005 90);">Full 12 in extension from a standard bicycle pump</div>
+        </div>
+        <div>
+          <div style="font-family:'Open Sans',sans-serif;font-weight:600;font-size:19px;letter-spacing:-0.01em;margin-bottom:6px;">$87.61 total exceeded target</div>
+          <div style="font-size:13px;color:oklch(0.4 0.005 90);">Bill of materials cost came in about 4.4x over the $20 suggested target</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:1600px;width:65%;margin:0 auto;padding:100px max(0px,calc(clamp(20px,5vw,88px) - 75px)) 50px;display:flex;justify-content:space-between;">
+    <a href="Baja SAE Suspension Design.dc.html" style="font-size:14.5px;font-weight:600;color:oklch(0.2 0.005 90);background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:0 100%;background-size:0% 2px;transition:background-size .25s ease,color .2s ease;" style-hover="background-size:100% 2px;color:oklch(0.4 0.005 90);">← Previous: Baja SAE Suspension Design</a>
+    <a href="Misalignment Spacers.dc.html" style="font-size:14.5px;font-weight:600;color:oklch(0.2 0.005 90);background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:0 100%;background-size:0% 2px;transition:background-size .25s ease,color .2s ease;" style-hover="background-size:100% 2px;color:oklch(0.4 0.005 90);">Next: Misalignment Spacers →</a>
+  </div>
+</div>
+
+  <a href="Baja SAE Suspension Design.dc.html" title="Previous project" aria-label="Previous project" style="position:fixed;left:48px;top:0;bottom:0;width:52px;z-index:20;display:flex;align-items:center;justify-content:flex-start;padding-left:12px;background:transparent;">
+    <svg width="17" height="27" viewBox="0 0 14 22" style="transform:rotate(180deg);opacity:0.32;transition:opacity .3s ease,transform .3s ease;" style-hover="opacity:1;transform:rotate(180deg) scale(1.25);"><path d="M1 1 L13 11 L1 21" fill="none" stroke="oklch(0.16 0.005 90)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  </a>
+  <a href="Misalignment Spacers.dc.html" title="Next project" aria-label="Next project" style="position:fixed;right:48px;top:0;bottom:0;width:52px;z-index:20;display:flex;align-items:center;justify-content:flex-end;padding-right:12px;background:transparent;">
+    <svg width="17" height="27" viewBox="0 0 14 22" style="opacity:0.32;transition:opacity .3s ease,transform .3s ease;" style-hover="opacity:1;transform:scale(1.25);"><path d="M1 1 L13 11 L1 21" fill="none" stroke="oklch(0.16 0.005 90)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  </a>
+</x-dc>
+</body>
+</html>

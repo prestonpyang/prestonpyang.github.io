@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>FSAE Powertrain Stiffening · Preston Yang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Open+Sans:wght@600;700;800&amp;family=Chakra+Petch:wght@600;700&amp;family=Barlow+Condensed:wght@500;600&amp;display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:#fff;}
+  ::selection{background:oklch(0.2 0.005 90);color:#fff;}
+  a{color:inherit;text-decoration:none;}
+  a:hover{color:oklch(0.16 0.005 90);}
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+
+  @media (max-width: 700px) {
+    div[style*="width:65%"] { width: 90% !important; }
+    div[style*="width: 65%"] { width: 90% !important; }
+    a[title="Previous project"], a[title="Next project"] { width: 34px !important; }
+    div[style*="grid-template-columns:minmax(280px,1fr) minmax(280px,380px)"] { grid-template-columns: 1fr !important; }
+  }
+</style>
+</helmet>
+<dc-import name="RocketGuide" hint-size="1,1"></dc-import>
+<div id="fsae-page" style="font-family:'Inter',system-ui,sans-serif;color:oklch(0.16 0.005 90);background:#fff;min-height:100vh;">
+
+  <nav aria-label="Primary" style="position:sticky;top:16px;z-index:30;display:flex;justify-content:center;pointer-events:none;">
+    <div style="pointer-events:auto;display:flex;flex-wrap:wrap;align-items:center;gap:3.52px;background:oklch(0.8 0.004 90 / 0.55);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border-radius:14.08px;padding:8.8px 24.2px 11px 13.2px;box-shadow:0 4px 20px oklch(0.16 0.005 90 / 0.1);max-width:calc(100vw - 40px);font-size:110%;">
+      <a href="index.html" style="width:22.88px;height:22.88px;background:oklch(0.12 0.005 90);border-radius:7.04px;display:flex;align-items:center;justify-content:center;flex:none;margin-right:14.08px;transition:transform .2s;" style-hover="transform:scale(1.1);">
+        <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:9.68px;color:#fff;letter-spacing:-0.02em;">PY</span>
+      </a>
+      <a href="index.html" style="color:oklch(0.16 0.005 90);font-size:14.52px;padding:6.16px 12.1px 9.9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">About</a>
+      <a href="Portfolio Projects.dc.html" style="color:oklch(0.16 0.005 90);font-size:14.52px;padding:6.16px 12.1px 9.9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">Projects</a>
+      <a href="Contact.dc.html" style="color:oklch(0.16 0.005 90);font-size:14.52px;padding:6.16px 12.1px 9.9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">Contact</a>
+    </div>
+  </nav>
+
+  <div style="max-width:1600px;width:65%;margin:0 auto;padding:68px max(0px,calc(clamp(20px,5vw,88px) - 75px)) 0;display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;">
+    <div style="">
+      <h1 style="font-family:'Open Sans',sans-serif;font-weight:600;font-size:clamp(2.1rem,4.4vw,3.1rem);letter-spacing:-0.02em;margin:0 0 14px;">FSAE Powertrain Stiffening</h1>
+      <p style="font-size:17.5px;line-height:1.6;color:oklch(0.45 0.005 90);margin:0;">Performed multi-iteration linear-static FEA of motor mount to reduce sprocket displacement under transient loads while controlling component mass.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,auto);gap:20px 32px;font-size:13.5px;align-self:flex-start;">
+      <div><div style="color:oklch(0.5 0.005 90);margin-bottom:3px;">Role</div><div style="font-weight:600;">Powertrain Sub-team Member</div></div>
+      <div><div style="color:oklch(0.5 0.005 90);margin-bottom:3px;">Timeline</div><div style="font-weight:600;">One Semester, FSAE</div></div>
+      <div><div style="color:oklch(0.5 0.005 90);margin-bottom:3px;">Tools</div><div style="font-weight:600;">SolidWorks, SolidWorks Simulation</div></div>
+      <div><div style="color:oklch(0.5 0.005 90);margin-bottom:3px;">Status</div><div style="font-weight:600;">Machined by Kamil, used on car</div></div>
+    </div>
+  </div>
+
+  <div style="max-width:1600px;width:65%;margin:0 auto;padding:36px max(0px,calc(clamp(20px,5vw,88px) - 75px));">
+    <div style="aspect-ratio:21/9;max-height:437px;max-width:95%;border-radius:14px;overflow:hidden;background:#fff;margin:0 auto;">
+      <img src="assets/fsae-hero-photo.jpg" alt="Fsae hero photo" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;">
+    </div>
+    <div style="font-size:13px;color:oklch(0.5 0.005 90);margin-top:10px;text-align:center;">The finished countershaft assembly installed in the powertrain bay</div>
+  </div>
+
+  <div style="max-width:1600px;width:65%;margin:0 auto;padding:0 max(0px,calc(clamp(20px,5vw,88px) - 75px)) 64px;">
+    <div>
+
+      <section style="margin-bottom:56px;">
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">Overview &amp; Ownership</div>
+        <p style="font-size:16.5px;line-height:1.7;color:oklch(0.35 0.005 90);margin:0;">The motor mount reacts the full secondary-chain tension as an off-axis load, making stiffness critical without adding unnecessary mass. Because the countershaft sprocket is supported at the end of a cantilevered shaft, even small angular deflections at the mount can produce larger lateral displacement at the sprocket. This can affect chain alignment, engagement, and load distribution across the sprocket.</p>
+        <p style="font-size:16.5px;line-height:1.7;color:oklch(0.35 0.005 90);margin:14px 0 0;"><strong>My role:&nbsp;</strong>created the CAD revisions and built, ran, and compared each simulation. The final component was machined by Kamil, our powertrain sub-team lead.</p>
+      </section>
+
+      <section style="margin-bottom:56px;">
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">Requirements</div>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+          <div style="border-top:1px solid oklch(0.85 0.005 90);padding-top:10px;">
+            <div style="font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:oklch(0.5 0.005 90);margin-bottom:4px;">Load case</div>
+            <div style="font-size:14.5px;color:oklch(0.3 0.005 90);">Chain tension reacted at the sprocket, held by four bolted points to the frame's rigid tubing</div>
+          </div>
+          <div style="border-top:1px solid oklch(0.85 0.005 90);padding-top:10px;">
+            <div style="font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:oklch(0.5 0.005 90);margin-bottom:4px;">Stiffness</div>
+            <div style="font-size:14.5px;color:oklch(0.3 0.005 90);">Minimize resultant displacement (URES) at the sprocket bore and mount arms under full tension</div>
+          </div>
+          <div style="border-top:1px solid oklch(0.85 0.005 90);padding-top:10px;">
+            <div style="font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:oklch(0.5 0.005 90);margin-bottom:4px;">Mass</div>
+            <div style="font-size:14.5px;color:oklch(0.3 0.005 90);">Remove as much material as stress margins allow, tracked part-by-part in SolidWorks mass properties</div>
+          </div><div style="border-top:1px solid oklch(0.85 0.005 90);padding-top:10px;">
+            <div style="font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:oklch(0.5 0.005 90);margin-bottom:4px;">Packaging</div>
+            <div style="font-size:14.5px;color:oklch(0.3 0.005 90);">Maintain the existing frame hardpoints and clear the sprocket, chain path, and nearby crossmember.</div>
+          </div>
+          
+        </div>
+      </section>
+
+      <section style="margin-bottom:56px;">
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">Load Path &amp; Assumptions</div>
+        <p style="font-size:16.5px;line-height:1.7;color:oklch(0.35 0.005 90);margin:0 0 20px;">Chain tension acts tangentially at the sprocket and creates a combined bending and torsional load on the motor mount. The load travels from the sprocket bore through the support arms, into the bolted mounting tabs, and finally into the chassis tubing.</p>
+        <div style="display:grid;grid-template-columns:240px minmax(0,1fr);gap:28px;align-items:center;margin-bottom:8px;">
+          <div style="width: 260px; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden; background: #fff; margin: 0 auto; position: relative; height: 200px; z-index: auto">
+            <img loading="lazy" src="assets/fsae-load-path.png" alt="Fsae load path" style="height: 100%; object-fit: contain; width: 100%">
+          </div>
+          <div>
+            <table style="width:100%;border-collapse:collapse;font-size:13.5px;">
+              <tbody>
+                <tr style="border-bottom:1px solid oklch(0.88 0.004 90);">
+                  <td style="padding:8px 10px 8px 0;font-weight:600;white-space:nowrap;">Frame tube ends</td>
+                  <td style="padding:8px 10px;color:oklch(0.35 0.005 90);white-space:nowrap;">Fixed</td>
+                  <td style="padding:8px 0;color:oklch(0.45 0.005 90);">The surrounding chassis tubing was treated as substantially stiffer than the mount being evaluated</td>
+                </tr>
+                <tr style="border-bottom:1px solid oklch(0.88 0.004 90);">
+                  <td style="padding:8px 10px 8px 0;font-weight:600;white-space:nowrap;">Bolted mount tabs</td>
+                  <td style="padding:8px 10px;color:oklch(0.35 0.005 90);white-space:nowrap;">Pin-type constraints</td>
+                  <td style="padding:8px 0;color:oklch(0.45 0.005 90);">Allowed rotation about the bolt axis while restraining translation, reducing artificial over-constraint</td>
+                </tr>
+                <tr>
+                  <td style="padding:8px 10px 8px 0;font-weight:600;white-space:nowrap;">Sprocket bore</td>
+                  <td style="padding:8px 10px;color:oklch(0.35 0.005 90);white-space:nowrap;">Distributed tangential load</td>
+                  <td style="padding:8px 0;color:oklch(0.45 0.005 90);">Chain tension reacted tangentially, off-axis to the mount plane</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div style="font-size:12.5px;color:oklch(0.5 0.005 90);font-style:italic;">Shown on one of the three-arm iterations; green is the part being redesigned. Boundary conditions were identical across every design.</div>
+      </section>
+
+      <section style="margin-bottom:56px;">
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">Baseline Simulations</div>
+        <p style="font-size:16.5px;line-height:1.7;color:oklch(0.35 0.005 90);margin:0 0 24px;">The existing three-arm configuration was evaluated first to establish a reference point. Under the design chain-tension load, the model produced peak 1.027mm of peak resultant displacement, concentrated near the sprocket.&nbsp;</p>
+        <div style="max-width:880px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:20px;">
+          <div style="aspect-ratio:16/10;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/fsae-baseline-sim.png" alt="Baseline simulation, original geometry: 1.027 mm peak displacement" style="width:100%;height:100%;object-fit:contain;"></div>
+          <div style="aspect-ratio:16/10;border-radius:8px;overflow:hidden;background:#fff;"><img loading="lazy" src="assets/fsae-baseline-sim-2.gif" alt="Baseline simulation, original geometry: 1.027 mm peak displacement" data-loop="1" style="width:100%;height:100%;object-fit:contain;"></div>
+        </div>
+        <div style="font-size:12.5px;color:oklch(0.5 0.005 90);font-style:italic;text-align:center;margin-top:8px;">Baseline simulation, original geometry: 1.027 mm peak displacement</div>
+      </section>
+
+      <section style="margin-bottom:56px;">
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">Concept Development</div>
+        <div style="font-size:16.5px;line-height:1.7;color:oklch(0.35 0.005 90);margin:0 0 20px;"><p class="isSelectedEnd">The first redesign concept used a symmetric four-arm, or X-shaped, support. It was rejected during the assembly review because the additional arm interfered with the sprocket and secondary-chain path.</p><p>The design therefore returned to a three-arm architecture that preserved the available chain clearance. The arm geometry was then refined through two mass-reduction approaches and compared using FEA.</p></div>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:8px;max-width:95%;">
+          <div>
+            <div style="aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#fff;margin-bottom:8px;"><img loading="lazy" src="assets/fsae-design1-x-flat.png" alt="Fsae design1 x flat" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-size:12.5px;font-weight:600;color:oklch(0.3 0.005 90);">Design 1 — four-arm (X)</div>
+            <div style="font-size:12.5px;color:oklch(0.5 0.005 90);">Rejected on fit: interferes with the chain and sprocket in the assembly</div>
+          </div>
+          <div>
+            <div style="aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#fff;margin-bottom:8px;"><img loading="lazy" src="assets/fsae-design2-threeprong-flat.png" alt="Fsae design2 threeprong flat" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-size:12.5px;font-weight:600;color:oklch(0.3 0.005 90);">Design 2 — three-prong</div>
+            <div style="font-size:12.5px;color:oklch(0.5 0.005 90);">Clears the chain path, carried forward and optimized</div>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-bottom:56px;">
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">Comparing Final Candidates</div>
+        <p style="font-size:16.5px;line-height:1.7;color:oklch(0.35 0.005 90);margin:0 0 20px;">Two mass-reduction approaches to the three-prong arm went to final FEA comparison: pocketed vs. infilled with triangular cutouts. Both showed a similar strain pattern, so displacement decided it, and the infilled version came out lower for a comparable amount of material removed.&nbsp;</p>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:8px;max-width:95%;">
+          <div>
+            <div style="aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#fff;margin-bottom:8px;"><img loading="lazy" src="assets/fsae-candidate-pocketed.png" alt="Fsae candidate pocketed" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-size:12.5px;font-weight:600;color:oklch(0.3 0.005 90);">Pocketed Arms</div>
+            <div style="font-size:12.5px;color:oklch(0.5 0.005 90);">Material was removed using straight pockets along the arm faces. This produced the lighter configuration but left less material along portions of the primary load path.</div>
+          </div>
+          <div>
+            <div style="aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#fff;margin-bottom:8px;"><img loading="lazy" src="assets/fsae-candidate-nocrossmember.png" alt="Straight pocket vs. triangular infill cutouts on the same three-prong arm" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-size:12.5px;font-weight:600;color:oklch(0.3 0.005 90);">Triangular Infill Cutouts — selected</div>
+            <div style="font-size:12.5px;color:oklch(0.5 0.005 90);">Triangular cutouts removed material while retaining more continuous load paths between the countershaft bore and mounting points.</div>
+          </div>
+        </div>
+        <p style="font-size:14.5px;line-height:1.6;color:oklch(0.4 0.005 90);margin:12px 0 0;">Both candidates showed similar overall deformation patterns. The triangular-infill design produced lower displacement for a relatively small mass increase and was therefore selected as the preferred aluminum design.</p>
+      </section>
+
+      <section style="margin-bottom:56px;">
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">FEA Results</div>
+        <p style="font-size:16.5px;line-height:1.7;color:oklch(0.35 0.005 90);margin:0 0 18px;">Resultant displacement at the sprocket was the primary comparison metric because it directly represented movement of the countershaft under chain tension. The selected triangular-infill design reduced predicted displacement by approximately 51% relative to the baseline and remained below the project target of 0.6 mm.</p>
+        <div style="margin:0 0 24px;max-width:420px;">
+          <div style="font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:oklch(0.5 0.005 90);margin-bottom:10px;">Displacement by stage</div>
+          <div style="display:grid;gap:10px;">
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:12px;color:oklch(0.5 0.005 90);margin-bottom:2px;"><span>Baseline (Sim 1)</span><span style="font-weight:600;color:oklch(0.3 0.005 90);">1.027 mm</span></div>
+              <div style="height:8px;background:oklch(0.88 0.004 90);border-radius:4px;overflow:hidden;"><div style="width:100%;height:100%;background:oklch(0.55 0.09 25);"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:12px;color:oklch(0.5 0.005 90);margin-bottom:2px;"><span>Pocketed arm</span><span style="font-weight:600;color:oklch(0.3 0.005 90);">0.5905 mm</span></div>
+              <div style="height:8px;background:oklch(0.88 0.004 90);border-radius:4px;overflow:hidden;"><div style="width:53%;height:100%;background:oklch(0.65 0.1 75);"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:12px;color:oklch(0.5 0.005 90);margin-bottom:2px;"><span>Infilled arm — released design</span><span style="font-weight:600;color:oklch(0.3 0.005 90);">0.5053 mm</span></div>
+              <div style="height:8px;background:oklch(0.88 0.004 90);border-radius:4px;overflow:hidden;"><div style="width:49%;height:100%;background:oklch(0.6 0.13 155);"></div></div>
+            </div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:8px;max-width:95%;">
+          <div>
+            <div style="aspect-ratio: 4/3; border-radius: 8px; overflow: hidden; background: #fff; margin-bottom: 8px;"><img loading="lazy" src="assets/fsae-fea-disp-crossmember.png" alt="Fsae fea disp crossmember" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-size:12.5px;color:oklch(0.5 0.005 90);">Pocketed arm: displacement plot</div>
+          </div>
+          <div>
+            <div style="aspect-ratio: 4/3; border-radius: 8px; overflow: hidden; background: #fff; margin-bottom: 8px"><img loading="lazy" src="assets/fsae-fea-disp-nocrossmember.png" alt="Fsae fea disp nocrossmember" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-size:12.5px;color:oklch(0.5 0.005 90);">Infilled arm — selected: lower displacement</div>
+          </div>
+        </div>
+        <div style="font-weight:600;font-size:16px;margin-bottom:10px;">Mass Comparison</div>
+        <p style="font-size:14.5px;line-height:1.6;color:oklch(0.4 0.005 90);margin:0 0 14px;">The pocketed arm came in lighter, but the gap was small enough that the infilled arm's stiffness advantage was worth the extra 85 g.</p>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:24px;">
+          <div>
+            <div style="aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#fff;margin-bottom:8px;"><img loading="lazy" src="assets/fsae-mass-v1.png" alt="Fsae mass v1" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-size:12.5px;color:oklch(0.5 0.005 90);">Pocketed arm: 447.76 g</div>
+          </div>
+          <div>
+            <div style="aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#fff;margin-bottom:8px;"><img loading="lazy" src="assets/fsae-mass-v2.png" alt="Fsae mass v2" style="width:100%;height:100%;object-fit:contain;"></div>
+            <div style="font-size:12.5px;color:oklch(0.5 0.005 90);">Infilled arm, released: 532.52 g</div>
+          </div>
+        </div>
+        <div style="font-weight:600;font-size:16px;margin-bottom:10px;">Acceptance Criteria</div>
+        <ul style="font-size:14.5px;line-height:1.7;color:oklch(0.35 0.005 90);margin:0;padding-left:20px;">
+          <li>Resultant displacement at the sprocket bore under 0.6 mm at full chain tension</li>
+          <li>Peak strain held below the material's elastic limit with margin</li>
+          <li>Mass reduced from the baseline rigid-arm design without a new stress concentration at the mount bolts</li>
+          <li>Fits and installs on the existing frame hardpoints with no interference against the chain or crossbeam</li>
+        </ul>
+      </section>
+
+      <section>
+        <div style="font-weight:700;font-size:24px;margin-bottom:14px;">Final Part</div>
+        <div style="display:grid;grid-template-columns:320px minmax(0,1fr);gap:32px;align-items:start;">
+          <div style="aspect-ratio:4/5;border-radius:8px;overflow:hidden;border:1px solid oklch(0.9 0.004 90);"><img loading="lazy" src="assets/fsae-final-part-photo.jpg" alt="Fsae final part photo" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div style="font-size:15px;line-height:1.7;color:oklch(0.4 0.005 90);margin:8px 0 0;"><p class="isSelectedEnd">The triangular-infill geometry was released as the preferred design for aluminum 6061. However, we did not have aluminum stock when the component needed to be manufactured, so the sub-team used spare steel instead.</p><p class="isSelectedEnd">Because steel has significantly greater density than aluminum, the manufactured version reverted to the lighter pocketed geometry to limit the resulting mass increase. Steel also provides a higher elastic modulus, helping compensate and improve rigdity</p><p>The FEA was performed using aluminum material properties and was not repeated after the material changed to steel. For that reason, the documented simulation values are used to compare the design geometries rather than to claim the exact displacement or mass of the final steel component.</p></div>
+        </div>
+      </section>
+
+
+
+    </div>
+
+    
+  </div>
+
+  <div style="background:oklch(0.98 0.003 90);">
+    <div style="max-width:1600px;width:65%;margin:0 auto;padding:64px max(0px,calc(clamp(20px,5vw,88px) - 75px)) 100px;">
+      <div style="font-weight:700;font-size:24px;margin-bottom:24px;">Results</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;border-top:1px solid oklch(0.85 0.005 90);padding-top:24px;">
+        <div>
+          <div style="font-family:'Open Sans',sans-serif;font-weight:600;font-size:19px;letter-spacing:-0.01em;margin-bottom:6px;">0.591 mm FEA displacement</div>
+          <div style="font-size:13px;color:oklch(0.4 0.005 90);">Pocketed geometry, down from 1.027 mm baseline; aluminum FEA, not re-run after the switch to steel</div>
+        </div>
+        <div>
+          <div style="font-family:'Open Sans',sans-serif;font-weight:600;font-size:19px;letter-spacing:-0.01em;margin-bottom:6px;">447.76 g (aluminum FEA)</div>
+          <div style="font-size:13px;color:oklch(0.4 0.005 90);">Pocketed-arm mass tracked in CAD; final steel part reverted to this geometry, mass not re-measured</div>
+        </div>
+        <div>
+          <div style="font-family:'Open Sans',sans-serif;font-weight:600;font-size:19px;letter-spacing:-0.01em;margin-bottom:6px;">42% Reduction from Baseline</div>
+          <div style="font-size:13px;color:oklch(0.4 0.005 90);">The pocketed geometry reduced predicted countershaft displacement by approximately 42%.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width: 1600px; width: 65%; margin: 0 auto; padding: 100px max(0px,calc(clamp(20px,5vw,88px) - 75px)) 50px; display: flex; justify-content: space-between; padding-bottom: 50px; padding-top: 100px">
+    <a href="Portfolio Projects.dc.html#top" style="font-size:14.5px;font-weight:600;color:oklch(0.2 0.005 90);background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:0 100%;background-size:0% 2px;transition:background-size .25s ease,color .2s ease;" style-hover="background-size:100% 2px;color:oklch(0.4 0.005 90);">← All Projects</a>
+    <a href="Compressed Air Engine.dc.html" style="font-size:14.5px;font-weight:600;color:oklch(0.2 0.005 90);background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:0 100%;background-size:0% 2px;transition:background-size .25s ease,color .2s ease;" style-hover="background-size:100% 2px;color:oklch(0.4 0.005 90);">Next: 3D-Printed Compressed-Air Engine →</a>
+  </div>
+</div>
+
+  <a href="Portfolio Projects.dc.html#top" title="Previous project" aria-label="Previous project" style="position:fixed;left:48px;top:0;bottom:0;width:52px;z-index:20;display:flex;align-items:center;justify-content:flex-start;padding-left:12px;background:transparent;">
+    <svg width="17" height="27" viewBox="0 0 14 22" style="transform:rotate(180deg);opacity:0.32;transition:opacity .3s ease,transform .3s ease;" style-hover="opacity:1;transform:rotate(180deg) scale(1.25);"><path d="M1 1 L13 11 L1 21" fill="none" stroke="oklch(0.16 0.005 90)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  </a>
+  <a href="Compressed Air Engine.dc.html" title="Next project" aria-label="Next project" style="position:fixed;right:48px;top:0;bottom:0;width:52px;z-index:20;display:flex;align-items:center;justify-content:flex-end;padding-right:12px;background:transparent;">
+    <svg width="17" height="27" viewBox="0 0 14 22" style="opacity:0.32;transition:opacity .3s ease,transform .3s ease;" style-hover="opacity:1;transform:scale(1.25);"><path d="M1 1 L13 11 L1 21" fill="none" stroke="oklch(0.16 0.005 90)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  </a>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

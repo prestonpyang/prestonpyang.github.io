@@ -8,7 +8,7 @@
 <body>
 <x-dc>
 <helmet>
-<title>Contact — Preston Yang</title>
+<title>Contact · Preston Yang</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Open+Sans:wght@600;700;800&amp;family=Chakra+Petch:wght@600;700&amp;family=Barlow+Condensed:wght@500;600&amp;display=swap" rel="stylesheet">
 <style>
@@ -20,26 +20,33 @@
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
   }
+
+  @media (max-width: 700px) {
+    div[style*="width:65%"] { width: 90% !important; }
+    div[style*="width: 65%"] { width: 90% !important; }
+    a[title="Previous project"], a[title="Next project"] { width: 34px !important; }
+    div[style*="grid-template-columns:minmax(280px,1fr) minmax(280px,380px)"] { grid-template-columns: 1fr !important; }
+  }
 </style>
 </helmet>
 <dc-import name="RocketGuide" hint-size="1,1"></dc-import>
 <div style="font-family:'Inter',system-ui,sans-serif;color:oklch(0.16 0.005 90);background:#fff;min-height:100vh;display:flex;flex-direction:column;">
 
   <nav aria-label="Primary" style="position:sticky;top:16px;z-index:30;display:flex;justify-content:center;pointer-events:none;">
-    <div style="pointer-events:auto;display:flex;flex-wrap:wrap;align-items:center;gap:3.20px;background:oklch(0.88 0.004 90 / 0.4);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border-radius:12.80px;padding:8px 22px 10px 12px;box-shadow:0 4px 20px oklch(0.16 0.005 90 / 0.1);max-width:calc(100vw - 40px);">
-      <a href="index.html" style="width:20.80px;height:20.80px;background:oklch(0.12 0.005 90);border-radius:6.40px;display:flex;align-items:center;justify-content:center;flex:none;margin-right:12.80px;transition:transform .2s;" style-hover="transform:scale(1.1);">
-        <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:8.80px;color:#fff;letter-spacing:-0.02em;">PY</span>
+    <div style="pointer-events:auto;display:flex;flex-wrap:wrap;align-items:center;gap:3.52px;background:oklch(0.8 0.004 90 / 0.55);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border-radius:14.08px;padding:8.8px 24.2px 11px 13.2px;box-shadow:0 4px 20px oklch(0.16 0.005 90 / 0.1);max-width:calc(100vw - 40px);font-size:110%;">
+      <a href="index.html" style="width:22.88px;height:22.88px;background:oklch(0.12 0.005 90);border-radius:7.04px;display:flex;align-items:center;justify-content:center;flex:none;margin-right:14.08px;transition:transform .2s;" style-hover="transform:scale(1.1);">
+        <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:9.68px;color:#fff;letter-spacing:-0.02em;">PY</span>
       </a>
-      <a href="index.html" style="color:oklch(0.16 0.005 90);font-size:13.20px;padding:5.60px 11px 9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">About</a>
-      <a href="Portfolio Projects.dc.html" style="color:oklch(0.16 0.005 90);font-size:13.20px;padding:5.60px 11px 9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">Projects</a>
-      <a href="Contact.dc.html" style="color:oklch(0.16 0.005 90);font-size:13.20px;padding:5.60px 11px 9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">Contact</a>
+      <a href="index.html" style="color:oklch(0.16 0.005 90);font-size:14.52px;padding:6.16px 12.1px 9.9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">About</a>
+      <a href="Portfolio Projects.dc.html" style="color:oklch(0.16 0.005 90);font-size:14.52px;padding:6.16px 12.1px 9.9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">Projects</a>
+      <a href="Contact.dc.html" style="color:oklch(0.16 0.005 90);font-size:14.52px;padding:6.16px 12.1px 9.9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">Contact</a>
     </div>
   </nav>
 
   <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:48px 0px;">
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));justify-content:center;gap:clamp(10px,1.6vw,28px);max-width:1600px;width:65%;width:100%;align-items:center;transform:translateY(-16px);">
+  <div style="display:grid;grid-template-columns:minmax(280px,1fr) minmax(280px,380px);justify-content:center;gap:clamp(32px,5vw,72px);max-width:880px;width:100%;align-items:center;transform:translateY(-16px);">
     <div>
-      <h1 style="font-family: 'Open Sans',sans-serif; font-weight: 600; font-size: clamp(2.25rem,4.8vw,3.35rem); line-height: 1.08; letter-spacing: -0.02em; margin: 0 0 24px; width: 653px; height: 122px">Let's build<br>something.</h1>
+      <h1 style="font-family: 'Open Sans',sans-serif; font-weight: 600; font-size: clamp(2.25rem,4.8vw,3.35rem); line-height: 1.08; letter-spacing: -0.02em; margin: 0 0 24px;">Let's build<br>something.</h1>
 
       <div style="display:flex;flex-direction:column;gap:20px;">
         <a href="mailto:prestonppy@gmail.com" style="display:flex;align-items:center;gap:16px;font-size:18px;color:oklch(0.25 0.005 90);width:fit-content;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:52px 100%;background-size:0% 1.5px;transition:background-size .25s ease,color .2s;" style-hover="background-size:calc(100% - 52px) 1.5px;color:oklch(0.1 0.005 90);">
@@ -49,7 +56,7 @@
             </svg>
           </span>prestonppy@gmail.com
         </a>
-        <a href="https://linkedin.com/in/prestonyang" style="display:flex;align-items:center;gap:16px;font-size:18px;color:oklch(0.25 0.005 90);width:fit-content;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:52px 100%;background-size:0% 1.5px;transition:background-size .25s ease,color .2s;" style-hover="background-size:calc(100% - 52px) 1.5px;color:oklch(0.1 0.005 90);">
+        <a href="https://www.linkedin.com/in/prestonyang" style="display:flex;align-items:center;gap:16px;font-size:18px;color:oklch(0.25 0.005 90);width:fit-content;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:52px 100%;background-size:0% 1.5px;transition:background-size .25s ease,color .2s;" style-hover="background-size:calc(100% - 52px) 1.5px;color:oklch(0.1 0.005 90);">
           <span style="width:36px;height:36px;border-radius:8px;background:oklch(0.93 0.003 90);flex:none;display:flex;align-items:center;justify-content:center;font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:15px;color:oklch(0.16 0.005 90);transition:background .2s,color .2s,transform .2s;" style-hover="background:oklch(0.16 0.005 90);color:#fff;transform:scale(1.08);">in</span>linkedin.com/in/prestonyang
         </a>
       </div>
