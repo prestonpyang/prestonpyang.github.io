@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+  @keyframes flyMove{
+    0%{transform:translate(85vw,16vh);}
+    16%{transform:translate(90vw,8vh);}
+    33%{transform:translate(93vw,42vh);}
+    50%{transform:translate(76vw,80vh);}
+    66%{transform:translate(58vw,84vh);}
+    83%{transform:translate(55vw,46vh);}
+    100%{transform:translate(85vw,16vh);}
+  }
+  @keyframes flySpin{
+    0%{transform:rotate(-53deg);}
+    16%{transform:rotate(87deg);}
+    33%{transform:rotate(114deg);}
+    50%{transform:rotate(167deg);}
+    66%{transform:rotate(266deg);}
+    83%{transform:rotate(315deg);}
+    100%{transform:rotate(307deg);}
+  }
+  @keyframes rgBob{0%,100%{transform:translateY(0);}50%{transform:translateY(-4px);}}
+  @keyframes rgFlame{0%,100%{transform:scaleX(1) scaleY(1);opacity:0.7;}50%{transform:scaleX(1.15) scaleY(0.92);opacity:0.45;}}
+</style>
+</helmet>
+<div style="position:fixed;inset:0;pointer-events:none;z-index:-1;">
+  <div style="position:absolute;width:72px;height:36px;animation:flyMove 60s linear infinite;will-change:transform;">
+    <div style="position:relative;width:72px;height:36px;animation:flySpin 60s linear infinite,rgBob 4.2s ease-in-out infinite;will-change:transform;">
+      <div onClick="{{ openGallery }}" onMouseEnter="{{ onEnter }}" onMouseLeave="{{ onLeave }}" style="position:relative;width:72px;height:36px;pointer-events:auto;cursor:pointer;">
+        <svg viewBox="-10 -10 130 70" width="72" height="36" style="overflow:visible;">
+          <g>
+            <path d="M112 30 C104 18 60 14 25 20 L15 30 L25 40 C60 46 104 42 112 30 Z" fill="#fff" stroke="oklch(0.16 0.005 90)" stroke-width="1.4"></path>
+            <path d="M25 20 L14 12 L27 24 Z" fill="none" stroke="oklch(0.16 0.005 90)" stroke-width="1.4"></path>
+            <path d="M25 40 L14 48 L27 36 Z" fill="none" stroke="oklch(0.16 0.005 90)" stroke-width="1.4"></path>
+            <g style="transform-origin:20px 30px;animation:rgFlame 1.3s ease-in-out infinite;">
+              <path d="M20 20 C13 22.5 6 26 2 29.5 C6 28.5 9 31 7.5 33.5 C11 32.5 13 35 12 37.5 C15.5 36.5 18 39 20 40.5 C17 36.5 15.5 33.5 18 30 C15.5 26.5 17 23.5 20 20 Z" fill="#e8531f"></path>
+              <path d="M20 23 C15 25 10 27.8 7 30.2 C10 29.5 11.5 31.5 10.5 33.5 C13 32.8 14.5 34.7 14 36.7 C16.8 36 18.5 38 20 39 C17.8 36 16.5 33.5 18.3 30.2 C16.5 27 17.5 25 20 23 Z" fill="#f5a623"></path>
+              <path d="M20 26 C17 27.3 13.5 29.2 11.5 30.8 C13.5 30.3 14.5 31.7 13.8 33.2 C15.6 32.7 16.7 34 16.3 35.4 C18.2 34.9 19.2 36.2 20 37 C18.4 34.9 17.5 33 18.8 30.8 C17.5 28.6 18.2 27.4 20 26 Z" fill="#fbdd4b"></path>
+            </g>
+            <circle cx="58" cy="6" r="5" fill="none" stroke="oklch(0.16 0.005 90)" stroke-width="1.4"></circle>
+            <line x1="60" y1="11" x2="62" y2="23" stroke="oklch(0.16 0.005 90)" stroke-width="1.4"></line>
+            <line x1="61" y1="15" x2="73" y2="21" stroke="oklch(0.16 0.005 90)" stroke-width="1.4"></line>
+            <line x1="62" y1="23" x2="75.4" y2="30.3" stroke="oklch(0.16 0.005 90)" stroke-width="1.4"></line>
+          </g>
+        </svg>
+        <sc-if value="{{ showBubble }}" hint-placeholder-val="{{ false }}">
+          <div style="position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:10px;background:#fff;border:1px solid oklch(0.85 0.005 90);border-radius:10px;padding:7px 12px;font-size:11px;font-family:'Inter',system-ui,sans-serif;white-space:nowrap;box-shadow:0 6px 16px oklch(0.16 0.005 90 / 0.14);color:oklch(0.2 0.005 90);">{{ phrase }}</div>
+        </sc-if>
+      </div>
+    </div>
+  </div>
+</div>
+
+<sc-if value="{{ galleryOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeGallery }}" style="position:fixed;inset:0;background:oklch(0.1 0.005 90 / 0.75);z-index:100;display:flex;align-items:center;justify-content:center;padding:40px;">
+    <div onClick="{{ stopClick }}" style="background:#fff;border-radius:16px;max-width:900px;width:100%;max-height:85vh;overflow-y:auto;padding:32px;position:relative;">
+      <button onClick="{{ closeGallery }}" style="position:absolute;top:16px;right:16px;width:32px;height:32px;border-radius:999px;border:1px solid oklch(0.85 0.005 90);background:#fff;cursor:pointer;font-size:16px;color:oklch(0.3 0.005 90);">×</button>
+      <div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:22px;margin-bottom:6px;">Engineering, in the field</div>
+      <div style="font-size:13px;color:oklch(0.5 0.005 90);margin-bottom:24px;">A few shots from the shop, the track, and the bench.</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+        <sc-for list="{{ galleryImages }}" as="g" hint-placeholder-count="6">
+          <div style="aspect-ratio:4/3;border-radius:10px;overflow:hidden;background:oklch(0.93 0.003 90);">
+            <img src="{{ g.src }}" alt="{{ g.alt }}" style="width:100%;height:100%;object-fit:cover;display:block;">
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { showBubble: false, phraseIdx: 0, galleryOpen: false };
+  phrases = ['Hi, I\'m Preston\'s rocket.', 'Click me!', 'Machining things since 2022.', 'Torque check complete.', 'Powered by CAD & caffeine.'];
+
+  renderVals() {
+    const galleryImages = [
+      { src: 'assets/fsae-hero-photo.jpg', alt: 'NYU Motorsports build' },
+      { src: 'assets/fsae-chain-sprocket-cad.png', alt: 'Powertrain CAD' },
+      { src: 'assets/spacer-cam-toolpath.png', alt: 'CAM toolpath' },
+      { src: 'assets/balljoint-cam-toolpath.png', alt: 'CNC machining' },
+      { src: 'assets/cae-propeller-cad.png', alt: 'Compressed air engine CAD' },
+      { src: 'assets/afr-housing-cad.png', alt: 'Rotary actuator CAD' },
+    ];
+    return {
+      showBubble: this.state.showBubble,
+      phrase: this.phrases[this.state.phraseIdx],
+      galleryOpen: this.state.galleryOpen,
+      galleryImages,
+      onEnter: () => this.setState({ showBubble: true, phraseIdx: Math.floor(Math.random() * this.phrases.length) }),
+      onLeave: () => this.setState({ showBubble: false }),
+      openGallery: () => this.setState({ galleryOpen: true, showBubble: false }),
+      closeGallery: () => this.setState({ galleryOpen: false }),
+      stopClick: (e) => e.stopPropagation(),
+    };
+  }
+}
+</script>
+</body>
+</html>
