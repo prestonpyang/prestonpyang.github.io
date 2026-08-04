@@ -9,7 +9,7 @@
 <x-dc>
 
 <helmet>
-<title>Baja SAE Suspension Design — Preston Yang</title>
+<title>Baja SAE Suspension Design · Preston Yang</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Open+Sans:wght@600;700;800&amp;family=Chakra+Petch:wght@600;700&amp;family=Barlow+Condensed:wght@500;600&amp;display=swap" rel="stylesheet">
 <style>
@@ -22,26 +22,33 @@
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
   }
+
+  @media (max-width: 700px) {
+    div[style*="width:65%"] { width: 90% !important; }
+    div[style*="width: 65%"] { width: 90% !important; }
+    a[title="Previous project"], a[title="Next project"] { width: 34px !important; }
+    div[style*="grid-template-columns:minmax(280px,1fr) minmax(280px,380px)"] { grid-template-columns: 1fr !important; }
+  }
 </style>
 </helmet>
 <dc-import name="RocketGuide" hint-size="1,1"></dc-import>
 <div style="font-family:'Inter',system-ui,sans-serif;color:oklch(0.16 0.005 90);background:#fff;min-height:100vh;">
 
   <nav aria-label="Primary" style="position:sticky;top:16px;z-index:30;display:flex;justify-content:center;pointer-events:none;">
-    <div style="pointer-events:auto;display:flex;flex-wrap:wrap;align-items:center;gap:3.20px;background:oklch(0.88 0.004 90 / 0.4);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border-radius:12.80px;padding:8px 22px 10px 12px;box-shadow:0 4px 20px oklch(0.16 0.005 90 / 0.1);max-width:calc(100vw - 40px);">
-      <a href="index.html" style="width:20.80px;height:20.80px;background:oklch(0.12 0.005 90);border-radius:6.40px;display:flex;align-items:center;justify-content:center;flex:none;margin-right:12.80px;transition:transform .2s;" style-hover="transform:scale(1.1);">
-        <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:8.80px;color:#fff;letter-spacing:-0.02em;">PY</span>
-      </a>
-      <a href="index.html" style="color:oklch(0.16 0.005 90);font-size:13.20px;padding:5.60px 11px 9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">About</a>
-      <a href="Portfolio Projects.dc.html" style="color:oklch(0.16 0.005 90);font-size:13.20px;padding:5.60px 11px 9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">Projects</a>
-      <a href="Contact.dc.html" style="color:oklch(0.16 0.005 90);font-size:13.20px;padding:5.60px 11px 9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">Contact</a>
+    <div style="pointer-events:auto;display:flex;flex-wrap:wrap;align-items:center;gap:3.52px;background:oklch(0.8 0.004 90 / 0.55);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border-radius:14.08px;padding:8.8px 24.2px 11px 13.2px;box-shadow:0 4px 20px oklch(0.16 0.005 90 / 0.1);max-width:calc(100vw - 40px);font-size:110%;">
+      <div style="width:22.88px;height:22.88px;background:oklch(0.12 0.005 90);border-radius:7.04px;display:flex;align-items:center;justify-content:center;flex:none;margin-right:14.08px;">
+        <span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:9.68px;color:#fff;letter-spacing:-0.02em;">PY</span>
+      </div>
+      <a href="index.html" style="color:oklch(0.16 0.005 90);font-size:14.52px;padding:6.16px 12.1px 9.9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">About</a>
+      <a href="Portfolio Projects.dc.html" style="color:oklch(0.16 0.005 90);font-size:14.52px;padding:6.16px 12.1px 9.9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">Projects</a>
+      <a href="Contact.dc.html" style="color:oklch(0.16 0.005 90);font-size:14.52px;padding:6.16px 12.1px 9.9px;margin:0 1px;background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:12px calc(100% - 4px);background-size:0% 2px;transition:background-size .25s ease;" style-hover="background-size:calc(100% - 24px) 2px;">Contact</a>
     </div>
   </nav>
 
   <div style="max-width:1600px;width:65%;margin:0 auto;padding:24px max(0px,calc(clamp(20px,5vw,88px) - 75px)) 0;">
     
     <h1 style="font-family:'Open Sans',sans-serif;font-weight:600;font-size:clamp(2.1rem,4.4vw,3.1rem);letter-spacing:-0.02em;margin:0 0 16px;">Baja SAE Suspension Design</h1>
-    <p style="font-size:17.5px;line-height:1.6;color:oklch(0.45 0.005 90);margin:0 0 8px;">2026–2027 season. Full suspension design, from hardpoint kinematics through parametric CAD.</p>
+    <p style="font-size:17.5px;line-height:1.6;color:oklch(0.45 0.005 90);margin:0 0 8px;">2026 to 2027 season. Full suspension design, from hardpoint kinematics through parametric CAD.</p>
   </div>
 
   <div style="max-width:1600px;width:65%;margin:0 auto;padding:36px max(0px,calc(clamp(20px,5vw,88px) - 75px)) 96px;">
